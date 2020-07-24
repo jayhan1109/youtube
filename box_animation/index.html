@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Box Animation</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box-container">
+        <div class="box front">Front</div>
+        <div class="box back">Back</div>
+        <div class="box right">Right</div>
+        <div class="box left">Left</div>
+        <div class="box top">Top</div>
+        <div class="box bottom">Bottom</div>
+      </div>
+    </div>
+
+    <div class="btn-container">
+      <button class="btn" value="front">Front</button>
+      <button class="btn" value="back">Back</button>
+      <button class="btn" value="right">Right</button>
+      <button class="btn" value="left">Left</button>
+      <button class="btn" value="top">Top</button>
+      <button class="btn" value="bottom">Bottom</button>
+    </div>
+
+    <script>
+      const box = document.querySelector(".box-container");
+      const btnContainer = document.querySelector(".btn-container");
+      let current = "";
+
+      btnContainer.addEventListener("click", function (e) {
+        let btnValue = e.target.value;
+        let showClass = "show-" + btnValue;
+
+        if (current) {
+          box.classList.remove(current);
+        }
+
+        box.classList.add(showClass);
+        current = showClass;
+      });
+    </script>
+  </body>
+</html>
