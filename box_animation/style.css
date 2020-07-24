@@ -61,22 +61,22 @@ body {
 }
 
 .front {
-  background: red;
+  background: rgba(255, 0, 0, 0.6);
 }
 .right {
-  background: yellow;
+  background: rgba(255, 255, 0, 0.6);
 }
 .back {
-  background: green;
+  background: rgba(0, 255, 255, 0.6);
 }
 .left {
-  background: skyblue;
+  background: rgba(255, 0, 255, 0.6);
 }
 .top {
-  background: blue;
+  background: rgba(0, 0, 255, 0.6);
 }
 .bottom {
-  background: pink;
+  background: rgba(0, 255, 0, 0.6);
 }
 
 .front,
