@@ -1,0 +1,135 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto";
+}
+
+.container {
+  width: 800px;
+  height: 600px;
+  margin: 4rem auto;
+  position: relative;
+  background: #1e385d;
+  z-index: 0;
+  -webkit-box-shadow: 10px 10px 15px 4px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 15px 4px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 15px 4px rgba(0, 0, 0, 0.75);
+}
+
+.login {
+  width: 60%;
+  height: 100%;
+}
+
+.login::before {
+  content: "";
+  top: 0;
+  left: 0;
+  width: 800px;
+  height: 600px;
+  z-index: -1;
+  position: absolute;
+  opacity: 0.65;
+  background: url("./bg.jpg") no-repeat center center/cover;
+  clip-path: polygon(70% 0, 100% 0, 100% 100%, 0 100%);
+}
+
+.title {
+  text-align: center;
+  font-size: 3rem;
+  padding-top: 5rem;
+  padding-bottom: 2rem;
+  color: #fff;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.login-form input {
+  font-size: 1.3rem;
+  padding: 1.8rem 0.3rem 0.5rem 0.7rem;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  background: #294771;
+  color: #fff;
+  min-width: 300px;
+  margin-bottom: 1.5rem;
+  -webkit-box-shadow: 10px 10px 33px -14px rgba(0, 0, 0, 1);
+  -moz-box-shadow: 10px 10px 33px -14px rgba(0, 0, 0, 1);
+  box-shadow: 10px 10px 33px -14px rgba(0, 0, 0, 1);
+}
+
+.email {
+  position: relative;
+}
+
+.email::before {
+  content: "Email";
+  position: absolute;
+  font-family: "Roboto";
+  color: #eee;
+  width: 100%;
+  font-size: 0.8rem;
+  padding: 0.5rem 0.3rem 0rem 0.7rem;
+  letter-spacing: 0.2rem;
+}
+
+.password::before {
+  content: "Password";
+  position: absolute;
+  color: #eee;
+  width: 100%;
+  font-size: 0.8rem;
+  padding: 0.5rem 0.3rem 0rem 0.7rem;
+  letter-spacing: 0.2rem;
+}
+
+.btn {
+  color: #294771;
+  background: #fff;
+  font-family: sans-serif;
+  cursor: pointer;
+  margin-top: 1rem;
+  outline: none;
+  border: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 0.7rem 4rem;
+  border-radius: 5px;
+  -webkit-box-shadow: 10px 10px 33px -14px rgba(0, 0, 0, 1);
+  -moz-box-shadow: 10px 10px 33px -14px rgba(0, 0, 0, 1);
+  box-shadow: 10px 10px 33px -14px rgba(0, 0, 0, 1);
+  transition: 0.5s;
+}
+
+.btn:hover {
+  transform: scale(0.9);
+}
+
+p {
+  text-align: center;
+  margin-top: 3rem;
+  color: #fff;
+}
+
+p span {
+  display: inline-block;
+  color: #294771;
+  background: #fff;
+  margin-left: 0.5rem;
+  border-radius: 5px;
+  padding: 0.2rem 0.5rem;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+p span:hover {
+  transform: scale(0.9);
+}
