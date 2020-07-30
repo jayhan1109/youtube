@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background: #333;
+}
+
+.container {
+  width: 1000px;
+  height: 200px;
+  margin: 5rem auto;
+  background: #fff;
+  position: relative;
+}
+
+.txt {
+  font-size: 6rem;
+  color: transparent;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #333;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.txt::before {
+  content: "CODEMON";
+  position: absolute;
+  color: #333;
+  overflow: hidden;
+  transition: 1s;
+  width: 0;
+}
+
+.txt:hover::before {
+  width: 100%;
+}
