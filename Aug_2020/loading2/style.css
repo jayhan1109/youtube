@@ -98,7 +98,7 @@
 
 @keyframes effect {
   100% {
-    transform: translateX(-1000px);
+    transform: translateX(-1200px);
     opacity: 0;
   }
 }
